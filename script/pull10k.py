@@ -19,18 +19,25 @@ headers = {
 response = requests.get(url, headers=headers)
 response.raise_for_status()
 
-html = response.text
+soup = BeautifulSoup(response.content, "html.parser")
 
-soup = BeautifulSoup(html, "html.parser")
-
-for tag in soup(["script", "style"]):
+for tag in soup(["script", "style", "header", "footer", "title"]):
     tag.decompose()
 
-text = soup.get_text("\n")
+for td in soup.find_all("td"):
+    td.insert_after(" ") 
+for tr in soup.find_all("tr"):
+    tr.insert_after("\n") 
 
-text = re.sub(r"\r", "\n", text)
+text = soup.get_text(separator="\n")
+
+text = text.replace("\xa0", " ")
+text = text.replace("\xad", "")
+
 text = re.sub(r"\n{3,}", "\n\n", text)
 text = re.sub(r"[ \t]+", " ", text)
+
+text = "\n".join([line.strip() for line in text.splitlines() if line.strip()])
 
 with open(file_path, "w", encoding="utf-8") as f:
     f.write(text)
