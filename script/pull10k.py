@@ -26,8 +26,11 @@ soup = BeautifulSoup(html, "html.parser")
 for tag in soup(["script", "style"]):
     tag.decompose()
 
-text = soup.get_text(" ", strip=True)
-text = re.sub(r"\s+", " ", text)
+text = soup.get_text("\n")
+
+text = re.sub(r"\r", "\n", text)
+text = re.sub(r"\n{3,}", "\n\n", text)
+text = re.sub(r"[ \t]+", " ", text)
 
 with open(file_path, "w", encoding="utf-8") as f:
     f.write(text)
