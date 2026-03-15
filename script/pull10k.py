@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 data_dir = BASE_DIR / "data" / "raw 10k"
 data_dir.mkdir(parents=True, exist_ok=True)
 
