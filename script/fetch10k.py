@@ -1,5 +1,6 @@
 import os
-from edgar import Filing, set_identity, find
+import time     
+from edgar import Filing, set_identity, find, Company
 from pathlib import Path
 
 #set path
@@ -13,16 +14,46 @@ file_path = data_dir / "tesla_2021_clean.txt"
 set_identity("Tony Hurioglu tony@trhur.com")
 
 #fetch filing
-accession_number = "0000950170-22-000796"
-filing = find(accession_number)
+tickers = ["TSLA", "AMZN", "KO"]
+start_yr = 2019
 
-if filing:
-    text_content = filing.markdown()
+def download_filings():
+    for ticker in tickers:
+        print(f"\n--- processing {ticker} ---")
+        try:
+            company = Company(ticker)
+            filings = company.get_filings(form="10-K")
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(text_content)
+            for filing in filings:
+                year = filing.filing_date.year
 
-    print(f"Saved to: {file_path}")
-else:
-    print("Filing not found. Check the accession number.")
+                if year < start_yr:
+                    continue
+                
+                strat_path = data_dir / f"{ticker}_{year}_strategy.txt"
+                risk_path = data_dir / f"{ticker}_{year}_risk.txt"
 
+                if strat_path.exists() and risk_path.exists():
+                    print(f"Skipping {year} (already exists)")
+                    continue
+
+                print(f"Downloading {year} 10-K sections...")
+
+                tenk = filing.obj()
+
+                strategy_text = tenk['Item 1']
+                risk_text = tenk['Item 1A']
+
+                if strategy_text:
+                    strat_path.write_text(strategy_text, encoding="utf-8")
+                if risk_text:
+                    risk_path.write_text(risk_text, encoding="utf-8")
+
+                time.sleep(0.1)
+        
+        except Exception as e:
+            print(f"Error with {ticker}: {e}")
+
+if __name__ == "__main__":
+    download_filings()
+        
