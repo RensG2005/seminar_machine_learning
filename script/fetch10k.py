@@ -5,10 +5,8 @@ from pathlib import Path
 
 #set path
 BASE_DIR = Path(__file__).resolve().parent.parent
-data_dir = BASE_DIR / "data" / "raw_10k"
+data_dir = BASE_DIR / "data" / "Sections"
 data_dir.mkdir(parents=True, exist_ok=True)
-
-file_path = data_dir / "tesla_2021_clean.txt"
 
 #set identity (required)
 set_identity("Tony Hurioglu tony@trhur.com")
@@ -32,6 +30,7 @@ def download_filings():
                 
                 strat_path = data_dir / f"{ticker}_{year}_strategy.txt"
                 risk_path = data_dir / f"{ticker}_{year}_risk.txt"
+                mgmt_path = data_dir / f"{ticker}_{year}_MD&A.txt"
 
                 if strat_path.exists() and risk_path.exists():
                     print(f"Skipping {year} (already exists)")
@@ -43,13 +42,16 @@ def download_filings():
 
                 strategy_text = tenk['Item 1']
                 risk_text = tenk['Item 1A']
+                mgmt_text = tenk['Item 7']
 
                 if strategy_text:
                     strat_path.write_text(strategy_text, encoding="utf-8")
                 if risk_text:
                     risk_path.write_text(risk_text, encoding="utf-8")
+                if mgmt_text:
+                    mgmt_path.write_text(mgmt_text, encoding="utf-8")
 
-                time.sleep(0.1)
+                time.sleep(1)
         
         except Exception as e:
             print(f"Error with {ticker}: {e}")
