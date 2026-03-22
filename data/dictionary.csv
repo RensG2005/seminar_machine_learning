@@ -1,0 +1,152 @@
+Term,Category,Suggested_Regex
+Restructuring,Restructuring & Reorganization,restructur.*
+Reorganization,Restructuring & Reorganization,reorganiz.*
+Spin-off,Restructuring & Reorganization,spin-off|spinoff
+Divestiture,Restructuring & Reorganization,divestiture.*|divestment.*
+Carve-out,Restructuring & Reorganization,carve-out|carveout
+Right-size,Restructuring & Reorganization,right-size|rightsize
+Downsize,Restructuring & Reorganization,downsize|downsizing
+Consolidate,Restructuring & Reorganization,consolidat.*
+Streamline,Restructuring & Reorganization,streamlin.*
+Phase out,Restructuring & Reorganization,phase out|phasing out
+Wind down,Restructuring & Reorganization,wind down|winding down
+Discontinue,Restructuring & Reorganization,discontinu.*
+Facility closure,Restructuring & Reorganization,facility closure.*|closing.*facilit.*
+Headcount reduction,Restructuring & Reorganization,headcount reduction|reduce.*headcount
+Operational efficiency,Restructuring & Reorganization,operational efficiency
+Cost optimization,Restructuring & Reorganization,cost optimization
+Realign,Restructuring & Reorganization,realign.*
+Strategic review,Restructuring & Reorganization,strategic review
+Turnaround,Restructuring & Reorganization,turnaround
+Rationalization,Restructuring & Reorganization,rationaliz.*
+Pivot,Business Model Pivot,pivot.*
+Transformation,Business Model Pivot,transform.*
+Transition,Business Model Pivot,transition.*
+New business model,Business Model Pivot,new business model
+Recurring revenue,Business Model Pivot,recurring revenue
+Subscription-based,Business Model Pivot,subscription-based|subscription model
+Direct-to-consumer,Business Model Pivot,direct-to-consumer|\bd2c\b
+B2B2C,Business Model Pivot,\bb2b2c\b
+Shift in strategy,Business Model Pivot,shift in strategy
+Strategic shift,Business Model Pivot,strategic shift
+Core focus,Business Model Pivot,core focus
+Reposition,Business Model Pivot,reposition.*
+Monetization strategy,Business Model Pivot,monetization strategy
+As-a-service,Business Model Pivot,as-a-service
+SaaS transition,Business Model Pivot,saas transition|shift to saas
+Shift to cloud,Business Model Pivot,shift to cloud|transition to cloud
+Omnichannel,Business Model Pivot,omnichannel|omni-channel
+Commercialization,Business Model Pivot,commercializ.*
+Go-to-market,Business Model Pivot,go-to-market|\bgtm\b
+Business mix,Business Model Pivot,business mix
+Revenue mix,Business Model Pivot,revenue mix
+Rebrand,Business Model Pivot,rebrand.*
+Re-segmentation,Business Model Pivot,re-segmentation|resegmentation
+Target audience shift,Business Model Pivot,target audience|new demographic
+Product mix,Business Model Pivot,product mix
+Acquisition,M&A & Partnerships,acquisit.*
+Merger,M&A & Partnerships,merger.*
+Joint venture,M&A & Partnerships,joint venture|\bjv\b
+Strategic alliance,M&A & Partnerships,strategic alliance
+Partnership,M&A & Partnerships,partnership.*
+Integration,M&A & Partnerships,integrat.*
+Synergy,M&A & Partnerships,synerg.*
+Inorganic growth,M&A & Partnerships,inorganic growth
+Buyout,M&A & Partnerships,buyout.*
+Takeover,M&A & Partnerships,takeover.*
+Acquiree,M&A & Partnerships,acquiree
+Target company,M&A & Partnerships,target company|target acquisition
+Equity stake,M&A & Partnerships,equity stake
+Strategic investment,M&A & Partnerships,strategic investment
+Consortium,M&A & Partnerships,consortium
+Licensing agreement,M&A & Partnerships,licensing agreement
+Co-development,M&A & Partnerships,co-development|codevelopment
+Tuck-in,M&A & Partnerships,tuck-in acquisition
+Bolt-on,M&A & Partnerships,bolt-on acquisition
+De-SPAC,M&A & Partnerships,de-spac|despac
+Digital transformation,Tech & Innovation Transition,digital transformation
+Modernization,Tech & Innovation Transition,moderniz.*
+Automation,Tech & Innovation Transition,automat.*
+Digitization,Tech & Innovation Transition,digitiz.*
+Cloud migration,Tech & Innovation Transition,cloud migration
+AI integration,Tech & Innovation Transition,ai integration|integrate.*ai
+Artificial intelligence strategy,Tech & Innovation Transition,artificial intelligence strategy
+Machine learning deployment,Tech & Innovation Transition,machine learning deployment
+IoT implementation,Tech & Innovation Transition,iot implementation
+Industry 4.0,Tech & Innovation Transition,industry 4\.0
+Next-generation platform,Tech & Innovation Transition,next-generation platform
+Technology stack,Tech & Innovation Transition,technology stack
+Legacy system replacement,Tech & Innovation Transition,legacy system.*|replace.*legacy
+Data-driven,Tech & Innovation Transition,data-driven
+Advanced analytics,Tech & Innovation Transition,advanced analytics
+Blockchain integration,Tech & Innovation Transition,blockchain integration
+Smart infrastructure,Tech & Innovation Transition,smart infrastructure
+Electrification,Tech & Innovation Transition,electrification
+Autonomous systems,Tech & Innovation Transition,autonomous system.*
+Green transition,Tech & Innovation Transition,green transition
+Renewable shift,Tech & Innovation Transition,renewable shift|shift to renewable
+Decarbonization strategy,Tech & Innovation Transition,decarbonization strategy
+Web3 adoption,Tech & Innovation Transition,web3 adoption
+Spatial computing,Tech & Innovation Transition,spatial computing
+Edge deployment,Tech & Innovation Transition,edge deployment|edge computing
+New market,Market & Expansion Strategy,new market.*
+Geographic expansion,Market & Expansion Strategy,geographic expansion
+Emerging market,Market & Expansion Strategy,emerging market.*
+Market penetration,Market & Expansion Strategy,market penetration
+Diversification,Market & Expansion Strategy,diversificat.*
+Broaden,Market & Expansion Strategy,broaden.*
+New product line,Market & Expansion Strategy,new product line
+Commercial launch,Market & Expansion Strategy,commercial launch
+Global footprint,Market & Expansion Strategy,global footprint
+Cross-sell,Market & Expansion Strategy,cross-sell.*
+Up-sell,Market & Expansion Strategy,up-sell.*
+Unserved market,Market & Expansion Strategy,unserved market|underserved market
+Adjacent market,Market & Expansion Strategy,adjacent market.*
+Adjacencies,Market & Expansion Strategy,adjacenc.*
+Total addressable market,Market & Expansion Strategy,total addressable market|\btam\b
+TAM expansion,Market & Expansion Strategy,tam expansion
+Market share acquisition,Market & Expansion Strategy,market share acquisition
+Demographic shift,Market & Expansion Strategy,demographic shift
+Vertical integration,Market & Expansion Strategy,vertical integration
+Horizontal integration,Market & Expansion Strategy,horizontal integration
+Capital reallocation,Capital & Resource Allocation,capital reallocation
+Reinvestment,Capital & Resource Allocation,reinvest.*
+Shift in R&D,Capital & Resource Allocation,shift in r&d|r&d shift
+Research and development focus,Capital & Resource Allocation,research and development focus
+Strategic initiative,Capital & Resource Allocation,strategic initiative.*
+Growth initiative,Capital & Resource Allocation,growth initiative.*
+Capital deployment,Capital & Resource Allocation,capital deployment
+Optimization plan,Capital & Resource Allocation,optimization plan
+Cost-saving initiative,Capital & Resource Allocation,cost-saving initiative
+Budget reallocation,Capital & Resource Allocation,budget reallocation
+Strategic priority,Capital & Resource Allocation,strategic priorit.*
+Core competency,Capital & Resource Allocation,core competenc.*
+Non-core asset,Capital & Resource Allocation,non-core asset.*
+Asset sale,Capital & Resource Allocation,asset sale.*
+Strategic alternative,Capital & Resource Allocation,strategic alternative.*
+Portfolio optimization,Capital & Resource Allocation,portfolio optimization
+Resource allocation,Capital & Resource Allocation,resource allocation
+Structural cost reduction,Capital & Resource Allocation,structural cost reduction
+Operational excellence,Capital & Resource Allocation,operational excellence
+Margin expansion,Capital & Resource Allocation,margin expansion
+Supply chain redesign,Supply Chain & Operations,supply chain redesign
+Nearshoring,Supply Chain & Operations,nearshoring|near-shoring
+Friendshoring,Supply Chain & Operations,friendshoring|friend-shoring
+Onshoring,Supply Chain & Operations,onshoring|on-shoring
+Reshoring,Supply Chain & Operations,reshoring|re-shoring
+Supply chain resilience,Supply Chain & Operations,supply chain resilience
+Supplier diversification,Supply Chain & Operations,supplier diversification
+Capacity expansion,Supply Chain & Operations,capacity expansion
+Manufacturing pivot,Supply Chain & Operations,manufacturing pivot
+Outsourced,Supply Chain & Operations,outsourc.*
+Insourced,Supply Chain & Operations,insourc.*
+Verticalization,Supply Chain & Operations,verticalization
+Logistics optimization,Supply Chain & Operations,logistics optimization
+Footprint optimization,Supply Chain & Operations,footprint optimization
+Decentralization,Supply Chain & Operations,decentraliz.*
+Centralization,Supply Chain & Operations,centraliz.*
+Agility,Supply Chain & Operations,agilit.*
+Procurement strategy,Supply Chain & Operations,procurement strategy
+Inventory optimization,Supply Chain & Operations,inventory optimization
+Operating model,Supply Chain & Operations,operating model
+Strategic sourcing,Supply Chain & Operations,strategic sourcing
