@@ -9,10 +9,11 @@ data_dir = BASE_DIR / "data" / "Sections"
 data_dir.mkdir(parents=True, exist_ok=True)
 
 #set identity (required)
-set_identity("Tony Hurioglu tony@trhur.com")
+# set_identity("Tony Hurioglu tony@trhur.com")
+set_identity("Rens Gerritsen 658549rg@eur.nl")
 
 #fetch filing
-tickers = ["TSLA", "AMZN", "KO"]
+tickers = ["0000001750"]
 start_yr = 2019
 
 def download_filings():

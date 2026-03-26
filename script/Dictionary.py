@@ -1,8 +1,6 @@
 import pandas as pd
 import gensim.downloader as api
 
-#Load the CSV file into a Pandas DataFrame
-print("Loading CSV...")
 df = pd.read_csv('dictionary.csv') 
 
 #Extract the 'Term' column and convert it to a standard Python list
