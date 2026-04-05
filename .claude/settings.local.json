@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 -c ':*)"
+      "Bash(python3 -c ':*)",
+      "Bash(python3 -c \"import pandas as pd; df=pd.read_csv\\('Loughran-McDonald_MasterDictionary_1993-2024.csv',nrows=2\\); print\\(list\\(df.columns\\)\\)\")",
+      "Bash(python3 -c \"import pandas as pd; df=pd.read_csv\\('/home/rens/seminar_machine_learning/Loughran-McDonald_MasterDictionary_1993-2024.csv',nrows=2\\); print\\(list\\(df.columns\\)\\)\")",
+      "Bash(python3)"
     ]
   }
 }
