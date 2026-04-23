@@ -7,7 +7,7 @@ Seminar paper for Financial Economics, Erasmus School of Economics.
 
 ## Paper
 
-[Read the full paper (PDF)](./Financial_machine_learning_research_project-14.pdf)
+[Read the full paper (PDF)](./Financial_machine_learning_research_project_group_4_final.pdf)
 
 ## Abstract
 
