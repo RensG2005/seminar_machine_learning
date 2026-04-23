@@ -2,3 +2,21 @@
 .claude
 .claude/settings.local.json
 .DS_Store
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows NTFS alternate data streams (from files downloaded via browser on Windows/WSL)
+*:Zone.Identifier
+*Zone.Identifier
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
