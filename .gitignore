@@ -19,7 +19,9 @@ desktop.ini
 __pycache__/
 *.pyc
 .venv/
-venv/*.pdf
+
+*.pdf
+!Financial_machine_learning_research_project_group_4_final.pdf
 
 /script
 
