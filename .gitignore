@@ -19,4 +19,4 @@ desktop.ini
 __pycache__/
 *.pyc
 .venv/
-venv/
+venv/*.pdf
